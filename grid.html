@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid container</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        #heading{
+            text-align: center;
+        }
+        #container{
+            height: 300px;
+            width: 900px;
+            background-color: aqua;
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: 50px 100px;
+            grid-template-columns: 50px 100px;
+        }
+        .iteam{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            border: 2px solid black;
+        }
+        #iteam1{
+            background-color: pink;
+            grid-row:1 /2;
+            grid-column:1/2;
+        }
+       #iteam1{
+            background-color: pink;
+            grid-row:1 /2;
+            grid-column:1/2;
+        }
+        #iteam2{
+            background-color: green;
+            grid-row:1/2;
+            grid-column:2/2;
+        }
+        #iteam3{
+            background-color: yellow;
+            grid-row:2 /2;
+            grid-column:1/2;
+        }
+        #iteam4{
+            background-color: orange;
+            grid-row:2 /2;
+            grid-column:2/2;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div id="heading"> Grid container 
+    <div id="container">
+        <div id="iteam1" class="iteam"> iteam1</div>
+         <div id="iteam2" class="iteam"> iteam2</div>
+          <div id="iteam3" class="iteam"> iteam3</div>
+           <div id="iteam4" class="iteam"> iteam4</div>
+           
+    </div>
+    </div>
+    
+</body>
+</html>
